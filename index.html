@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SmartTools Hub</title>
+
+  <title>SmartTools Hub - Free Online Tools (QR, Password, Word Counter, JSON)</title>
+
+  <meta name="description" content="SmartTools Hub offers free online productivity tools like Word Counter, Password Generator, QR Code Generator, JSON Formatter, and URL Encoder. Fast and easy to use.">
+
+  <meta name="keywords" content="free tools, online tools, qr generator, password generator, word counter, json formatter, url encoder, developer tools, smart tools hub">
+
+  <meta name="author" content="SmartTools Hub">
+
+  <!-- Open Graph (for sharing) -->
+  <meta property="og:title" content="SmartTools Hub - Free Online Tools">
+  <meta property="og:description" content="Free productivity tools: QR Generator, Password Generator, Word Counter, JSON Formatter and more.">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -17,81 +31,91 @@
 
 <div class="container">
 
-  <!-- 1 WORD COUNTER -->
+  <!-- WORD COUNTER -->
   <div class="card" data-name="word counter">
-    <h2>Word Counter</h2>
+    <h2>Free Word Counter Tool</h2>
+    <p class="desc">Count words instantly and accurately online.</p>
     <textarea id="textInput"></textarea>
     <button onclick="wordCount()">Count Words</button>
     <div id="wordResult"></div>
   </div>
 
-  <!-- 2 PASSWORD -->
+  <!-- PASSWORD -->
   <div class="card" data-name="password generator">
-    <h2>Password Generator</h2>
+    <h2>Free Password Generator Tool</h2>
+    <p class="desc">Generate strong secure passwords instantly.</p>
     <button onclick="generatePassword()">Generate</button>
     <div id="passResult"></div>
     <button onclick="copyText('passResult')">Copy</button>
   </div>
 
-  <!-- 3 PASSWORD STRENGTH -->
+  <!-- PASSWORD STRENGTH -->
   <div class="card" data-name="password strength checker">
-    <h2>Password Strength</h2>
+    <h2>Password Strength Checker Online</h2>
+    <p class="desc">Check how strong your password is.</p>
     <input id="strengthInput" placeholder="Enter password">
     <button onclick="checkStrength()">Check</button>
     <div id="strengthResult"></div>
   </div>
 
-  <!-- 4 TEXT CONVERTER -->
+  <!-- TEXT CONVERTER -->
   <div class="card" data-name="text converter">
-    <h2>Text Converter</h2>
+    <h2>Text Case Converter Tool</h2>
+    <p class="desc">Convert text to uppercase or lowercase.</p>
     <textarea id="convertText"></textarea>
     <button onclick="toUpper()">UPPER</button>
     <button onclick="toLower()">lower</button>
     <div id="convertResult"></div>
   </div>
 
-  <!-- 5 RANDOM NUMBER -->
-  <div class="card" data-name="random number">
-    <h2>Random Number</h2>
+  <!-- RANDOM NUMBER -->
+  <div class="card" data-name="random number generator">
+    <h2>Random Number Generator</h2>
+    <p class="desc">Generate random numbers instantly.</p>
     <button onclick="randomNumber()">Generate</button>
     <div id="randomResult"></div>
   </div>
 
-  <!-- 6 TEXT CLEANER -->
+  <!-- TEXT CLEANER -->
   <div class="card" data-name="text cleaner">
-    <h2>Text Cleaner</h2>
+    <h2>Text Cleaner Tool</h2>
+    <p class="desc">Remove special characters from text.</p>
     <textarea id="cleanInput"></textarea>
     <button onclick="cleanText()">Clean</button>
     <div id="cleanResult"></div>
   </div>
 
-  <!-- 7 TEXT REVERSE -->
+  <!-- TEXT REVERSE -->
   <div class="card" data-name="text reverse">
-    <h2>Text Reverser</h2>
+    <h2>Text Reverser Tool</h2>
+    <p class="desc">Reverse your text instantly.</p>
     <textarea id="reverseInput"></textarea>
     <button onclick="reverseText()">Reverse</button>
     <div id="reverseResult"></div>
   </div>
 
-  <!-- 8 QR -->
+  <!-- QR -->
   <div class="card" data-name="qr generator">
-    <h2>QR Generator</h2>
+    <h2>Free QR Code Generator Online</h2>
+    <p class="desc">Generate QR codes instantly.</p>
     <input id="qrText" placeholder="Enter text">
     <button onclick="generateQR()">Generate</button>
     <div id="qrResult"></div>
   </div>
 
-  <!-- 9 JSON FORMATTER -->
+  <!-- JSON -->
   <div class="card" data-name="json formatter">
-    <h2>JSON Formatter</h2>
+    <h2>JSON Formatter & Validator</h2>
+    <p class="desc">Format and validate JSON data easily.</p>
     <textarea id="jsonInput"></textarea>
     <button onclick="formatJSON()">Format</button>
     <pre id="jsonResult"></pre>
   </div>
 
-  <!-- 10 URL ENCODER -->
+  <!-- URL -->
   <div class="card" data-name="url encoder decoder">
-    <h2>URL Encoder / Decoder</h2>
+    <h2>URL Encoder / Decoder Tool</h2>
+    <p class="desc">Encode or decode URLs instantly.</p>
     <input id="urlInput">
     <button onclick="encodeURL()">Encode</button>
     <button onclick="decodeURL()">Decode</button>
@@ -101,10 +125,9 @@
 </div>
 
 <footer>
-  <p>Made with ❤️</p>
+  <p>Made with ❤️ by SmartTools Hub</p>
   <a href="https://creators.sa/mivn" target="_blank">Support Developer</a>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
